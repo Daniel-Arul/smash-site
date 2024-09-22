@@ -11,7 +11,6 @@ async function getTournamentList() {
 }
 
 export default async function Tournaments() {
-  const head = header();
   const allTournaments = await getTournamentList();
 
   return(

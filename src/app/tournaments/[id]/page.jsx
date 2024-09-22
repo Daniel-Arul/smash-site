@@ -6,7 +6,6 @@ import tournamentData from "@/app/tournamentdata.json"
 
 
 export default async function Players({params}) {
-  let head = header();
   /*const file = await fs.readFile(process.cwd() + '/src/app/tournamentdata.json', 'utf8');
   const data = JSON.parse(file);*/
   const data = tournamentData;
