@@ -17,7 +17,7 @@ export default function Players() {
   };
   return (
     <div className={styles.all2}>
-      <Header/>
+      
       <div className={styles.all}>
       <div className={styles.container2}>
         <div className={styles.title}>SEARCH FOR PLAYERS</div>

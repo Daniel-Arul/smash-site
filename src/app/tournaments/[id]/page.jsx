@@ -23,7 +23,6 @@ export default async function Players({params}) {
   return(
     <div className={styles.bg}>
       <div className={styles.overflow}>
-        {head}
         <div className={styles.all}>
           <h1 className={styles.pixel}>CLASH AT CARLETON #{params.id} RESULTS:</h1>
           {res.map((player, key)=> (

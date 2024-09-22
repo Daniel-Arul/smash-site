@@ -4,10 +4,8 @@ import header from './components/header/header';
 
 
 export default function Home() {
-  const head = header();
   return (
     <div style={{overflowX: "hidden"}}>
-      {head}
       <div className={styles.all}> 
         <div className={styles.background}>
           <div className={styles.twinkling}></div>

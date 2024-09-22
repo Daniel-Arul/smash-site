@@ -8,7 +8,6 @@ export default function PlayerName({params}) {
   console.log(x);
   return (
     <div className={styles.all2}>
-      <Header/>
       <div className={styles.all}>
         <div className={styles.title}>Past Tournaments: {x}</div>
         <div className={styles.container}>

@@ -1,7 +1,7 @@
 import cssLayout from './globals.css';
 import styles from './home.module.css'
 import Home from './page';
-import header from './components/header/header';
+import Header from './components/header/header';
 
 export const metadata = {
   title: "Clash At Carleton",
@@ -19,7 +19,10 @@ export default function RootLayout({ children }) {
         sizes="<generated>"
       />
       </head>
-      <body>{children}</body>
+      <body>
+        <Header/>
+        {children}
+      </body>
     </html>
   );
 }

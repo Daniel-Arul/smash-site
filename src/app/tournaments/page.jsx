@@ -16,7 +16,6 @@ export default async function Tournaments() {
 
   return(
     <div className={styles.all}>
-      {head}
       <div className={styles.title}>THE ARCHIVE</div>
       <div className={styles.container}>
           {allTournaments.map((value, key) => (
