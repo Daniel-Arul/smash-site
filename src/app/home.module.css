@@ -1,0 +1,187 @@
+.all {
+  background-color: black;
+}
+
+.background {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  position: relative;     
+  background: url("/assets/stars.png") repeat ;  
+}
+
+.backgroundimg {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Cover the entire height to match the parent */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Move the background image behind other content */
+}
+
+.logoContainer {
+  display: grid;
+  position: relative;
+  bottom: 0;  /* Push the logoContainer down */
+  width: 100vw;
+  left: 0;
+  grid-template-columns: 10fr 0.1fr 8fr 20px;
+  justify-items: center; /* Centers logos in their grid cells */
+  align-items: center;   /* Centers logos vertically in their grid cells */
+  z-index: 2; /* Ensure the logos are on top of the background */
+}
+
+.logoLeft {
+  display: flex;
+  justify-content: center; /* Centers the logo images horizontally */
+  align-items: center;     /* Centers the logo images vertically */
+  margin: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.logoRight {
+  display: flex;
+  justify-content: center; /* Centers the logo images horizontally */
+  align-items: center;     /* Centers the logo images vertically */
+  margin: auto;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.imgLeft {
+  height: 300px;
+  margin-right: 0;
+}
+
+.imgRight {
+  height: 300px;
+  margin-left: 0;
+}
+
+.epicTitle {
+
+  display: block;
+  position: relative;
+  margin-top: 7vh;
+  left: 50%;
+  transform: translateX(-50%); /* Center the title horizontally */
+  max-width: 100%;  /* Adjust width as needed */
+  height: auto;
+  text-align: center; /* Center the text inside the title box */
+  z-index: 1;  /* Ensure the title appears above other content */
+}
+
+.x {
+  display: flex;
+}
+
+
+
+.pixelName {
+
+  display: block;
+  font-family: 'pixel';
+  font-size: 36px;
+  width: 90%;
+  padding: 20px;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+  margin: auto;
+  
+}
+
+.pixelName2 {
+  display: block;
+  font-family: 'pixel';
+  font-size: 30px;
+  width: 90%;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+  margin: auto;
+}
+
+
+.cacLogo {
+  margin: auto;
+  margin-top: 0; 
+  max-width: 80%;
+  animation: fadeIn 1s ease-in-out, 
+             float 6s infinite ease-in-out;
+}
+@keyframes typing {
+  from { width: 0; } /* Start with no text visible */
+ 
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translate(0, 25px);
+    opacity: 0%;
+
+  }
+  100% {
+    transform: translate(0,0);
+    opacity: 100%;
+  }
+}
+@keyframes fadeIn2 {
+  0% {
+    transform: translate(5%, 25px);
+    opacity: 0%;
+
+  }
+  100% {
+    transform: translate(5%,0);
+    opacity: 100%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0px);
+
+
+  }
+  25% {
+    transform: translate(0,-15px);
+
+  }
+  75% {
+    transform: translate(0, 15px);
+
+
+  }
+  100% {
+    transform: translate(0,0);
+
+  }
+}
+
+
+.twinkling {
+  position: absolute;
+  background: transparent url("/assets/twinkling.png");
+  z-index: 0;
+  left: 0;
+  top: 0;
+  animation: move-twinkle-back 200s linear infinite;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes move-twinkle-back {
+  from {
+    background-position: 0,0;
+  }
+  to {
+    background-position: -10000px, 5000px;
+  }
+}

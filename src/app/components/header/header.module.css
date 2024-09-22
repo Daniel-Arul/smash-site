@@ -1,0 +1,34 @@
+.container {
+  background-color: rgba(136, 0, 0);
+  filter: drop-shadow(0, 10px, rgb(255, 0, 0));
+  
+  
+}
+
+.header {
+  width: 100vw;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  
+  
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  
+  overflow-x: hidden;
+} 
+
+.header a {
+  transform: translate(2vw, 0);
+  font-family: 'pixel';
+  color: gainsboro;
+  font-size: min(24px, 3vw);
+  text-decoration: none;
+  margin: auto;
+  padding-right: 3vw;
+  padding-left: 3vw;
+}

@@ -1,0 +1,117 @@
+.container {
+  width: 70%;
+  margin: auto;
+  font-family: 'pixel';
+  font-size: min(2.5vw, 25px);
+}
+
+.all {
+  
+  overflow-x: hidden;
+  background-image: url("/assets/room.gif");
+  min-height: 100vh;
+  background-size: cover;
+  
+}
+
+.all2 {
+  overflow-x: hidden;
+}
+
+
+.title {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-family: 'pixel';
+  font-size: min(2.5vw, 50px);
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding: 20px;
+  border: solid 5px whitesmoke;
+  animation: fadeIn 0.5s linear forwards;
+}
+
+.link {
+  
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.linkContainer {
+  display: grid;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(136, 0, 0);
+  transform: translate(-30px, 0);
+  border: dotted 5px rgb(243, 79, 79);
+  
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.linkContainer:hover {
+  animation: fade 0.2s linear normal;
+  background-color: rgb(255, 0, 0);
+}
+
+@keyframes fade {
+  0% {
+    background-color: rgba(146, 0, 0, 0.8);
+  }
+  100% {
+    background-color: rgba(255, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translate(0,25px);
+    opacity: 0;
+
+  }
+  to {
+    transform: translate(0,0);
+    opacity: 1;
+  }
+}
+
+.link {
+  margin: auto;
+  
+}
+
+.a {
+  text-decoration: none;
+}
+
+.search {
+  display: flex;
+  font-size: large;
+  border-radius: 5px;
+  width: 100%;
+  transform: translate(-5px, 0);
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'pixel';
+  left: 50%;
+  font-weight: 100;
+  align-items: center;
+  
+}
+
+.search2 {
+  display: flex;
+  font-size: large;
+  border-radius: 5px;
+  width: 130px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'pixel';
+  font-weight: 100;
+  
+}
