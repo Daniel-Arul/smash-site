@@ -82,7 +82,11 @@
 .pixelName {
 
   display: block;
-  font-family: 'pixel';
+  font-family: 'smash';
+  letter-spacing: 5px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 36px;
   width: 90%;
   padding: 20px;
@@ -94,7 +98,10 @@
 
 .pixelName2 {
   display: block;
-  font-family: 'pixel';
+  font-family: 'smash-bold';
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 30px;
   width: 90%;
   padding: 20px;

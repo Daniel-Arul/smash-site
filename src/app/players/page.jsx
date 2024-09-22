@@ -19,16 +19,20 @@ export default function Players() {
     <div className={styles.all2}>
       <Header/>
       <div className={styles.all}>
+      <div className={styles.container2}>
         <div className={styles.title}>SEARCH FOR PLAYERS</div>
+        
         <div className={styles.container}>
-          <form action={`/players/${name}`}>
-            <div className={styles.search}>
-              <input type="text" placeholder="NAME" value={name} onChange={handleEventChange} className={styles.search} />
-              
+        
+          <form action={`/players/${name}`} >
+            <div className={styles.searchContainer}>
+              <input type="text" placeholder="Name" value={name} onChange={handleEventChange} className={styles.search} />
+              <button className={styles.search2} type="submit">Search</button>
             </div>
             
-            <button className={styles.search2} type="submit">Search</button>
+            
           </form>
+        </div>
         </div>
     </div>
   </div>

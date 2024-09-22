@@ -1,12 +1,13 @@
 import React from 'react';
 import { promises as fs } from 'fs';
 import styles from "./searchbar.module.css"
+import playerResults from "@/app/playerresults.json"
 
 export default async function Searchbar(props) {
-  const file = await fs.readFile(/*process.cwd() +*/ '/src/app/playerresults.json', 'utf8');
-  const data = JSON.parse(file);
+  //const file = await fs.readFile(/*process.cwd() +*/ '/src/app/playerresults.json', 'utf8');
+  //const data = JSON.parse(file);
 
-  const results = data[props.name]; 
+  const results = playerResults[props.name]; 
 
   if(results == null) {
     return (<div></div>) 

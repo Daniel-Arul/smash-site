@@ -1,14 +1,15 @@
 import styles from './styles.module.css';
 import header from '@/app/components/header/header';
 import { promises as fs } from 'fs';
+import tournamentData from "@/app/tournamentdata.json"
 
 
 
 export default async function Players({params}) {
   let head = header();
-  const file = await fs.readFile(/*process.cwd() +*/ '/src/app/tournamentdata.json', 'utf8');
-  const data = JSON.parse(file);
-  
+  /*const file = await fs.readFile(process.cwd() + '/src/app/tournamentdata.json', 'utf8');
+  const data = JSON.parse(file);*/
+  const data = tournamentData;
   const res = data[`CAC${params.id}`]
 
   for(let player of res) {

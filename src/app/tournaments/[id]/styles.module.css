@@ -58,15 +58,19 @@
 
 .playerPfp {
   margin-right: 100px;
+  margin-left: 2vw;
+  
   
 }
 
 .picture {
+  position: absolute;
   object-fit: cover;
-  width:  100px;
-  height: 100px;
+  width:  min(100px, 20vw);
+  height: min(100px, 20vw);
   margin: auto;
-  transform: translate(0, 20px);
+  top: 50%;
+  transform: translate(0,-50%);
   filter: drop-shadow(-6px 6px rgb(204, 204, 204));
   
 }
