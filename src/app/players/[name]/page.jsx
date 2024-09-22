@@ -2,7 +2,7 @@ import SearchBar from "@/app/components/searchbar/searchbar";
 import Header from "@/app/components/header/header";
 import styles from "./styles.module.css"
 
-export default function playerName({params}) {
+export default function PlayerName({params}) {
   var x = decodeURIComponent( params.name )
   console.log(x);
   return (

@@ -10,7 +10,7 @@ async function getTournamentList() {
   return allTournaments;
 }
 
-export default async function tournaments() {
+export default async function Tournaments() {
   const head = header();
   const allTournaments = await getTournamentList();
 

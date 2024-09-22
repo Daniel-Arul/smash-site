@@ -8,7 +8,7 @@ import styles from "./players.module.css"
 
 
 
-export default function players() {
+export default function Players() {
   //let head = header();
   const [name, setName] = useState("");
 

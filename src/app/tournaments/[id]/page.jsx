@@ -4,7 +4,7 @@ import { promises as fs } from 'fs';
 
 
 
-export default async function players({params}) {
+export default async function Players({params}) {
   let head = header();
   const file = await fs.readFile(process.cwd() + '/src/app/tournamentdata.json', 'utf8');
   const data = JSON.parse(file);
