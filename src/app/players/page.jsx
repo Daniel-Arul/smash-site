@@ -5,9 +5,6 @@ import Header from "../components/header/header"
 import styles from "./players.module.css"
 
 
-function renderResults(name) {
-  return (<Results name={name}/>)
-}
 
 
 
