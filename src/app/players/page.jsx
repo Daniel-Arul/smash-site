@@ -24,7 +24,7 @@ export default function Players() {
         
         <div className={styles.container}>
         
-          <form action={`/players/${name}`} >
+          <form action={`/players/${encodeURIComponent(name)}`} >
             <div className={styles.searchContainer}>
               <input type="text" placeholder="Name" value={name} onChange={handleEventChange} className={styles.search} />
               <button className={styles.search2} type="submit">Search</button>
